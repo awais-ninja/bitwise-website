@@ -1,5 +1,5 @@
 import WebDesign from "@/app/static/services/web-design.jpg";
-import WebDevelopment from "@/app/static/services/Website-development.jpg";
+import WebDevelopment from "@/app/static/services/website-development.jpg";
 import SEO from "@/app/static/services/seo.jpg";
 import GraphicDesign from "@/app/static/services/graphics.jpg";
 import SocialMediaMarketing from "@/app/static/services/marketing.jpg";
