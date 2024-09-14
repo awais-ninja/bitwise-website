@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import "animate.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Navbar from "./components/navigation/NavBar";
 import Footer from "./components/footer/Footer";
 import BackToTop from "./primitives/BacktoTop";
@@ -19,6 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-CRP5WEVWCS" />
       <body className={poppins.className}>
         <Navbar />
         {children}
