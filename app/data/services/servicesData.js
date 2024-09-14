@@ -12,7 +12,7 @@ const servicesData = [
       "We create stunning, fully responsive website designs that are tailored to your business needs, ensuring a professional online presence.",
     cta: "Read More",
     icon: WebDesign,
-    href: "/",
+    href: "/services",
   },
   {
     title: "Website Development",
@@ -20,7 +20,7 @@ const servicesData = [
       "Our team builds custom websites using the latest technologies, delivering fast, secure, and scalable solutions to meet your business goals.",
     cta: "Read More",
     icon: WebDevelopment,
-    href: "/",
+    href: "/services",
   },
   {
     title: "SEO",
@@ -28,7 +28,7 @@ const servicesData = [
       "Boost your website rankings and drive organic traffic with our expert SEO services, optimizing your visibility in search engines and increasing conversions.",
     cta: "Read More",
     icon: SEO,
-    href: "/",
+    href: "/services",
   },
   {
     title: "Graphic Design",
@@ -36,7 +36,7 @@ const servicesData = [
       "From unique logos to complete brand identities, our creative designs ensure your business stands out from the competition with visually stunning graphics.",
     cta: "Read More",
     icon: GraphicDesign,
-    href: "/",
+    href: "/services",
   },
   {
     title: "Social Media Marketing",
@@ -44,7 +44,7 @@ const servicesData = [
       "We develop tailored social media strategies that engage your target audience and help grow your brand across popular platforms like Facebook, Instagram, and LinkedIn.",
     cta: "Read More",
     icon: SocialMediaMarketing,
-    href: "/",
+    href: "/services",
   },
   {
     title: "IT Solutions",
@@ -52,7 +52,7 @@ const servicesData = [
       "Our IT Solutions offer businesses reliable, cutting-edge support for managing infrastructure, cloud computing, cybersecurity, and tech consulting to enhance productivity and security.",
     cta: "Read More",
     icon: IT,
-    href: "/",
+    href: "/services",
   },
 ];
 

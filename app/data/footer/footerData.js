@@ -2,37 +2,37 @@ const footerData = [
   {
     title: "Services",
     links: [
-      { text: "Web Development", href: "/services/web-development" },
-      { text: "Graphic Design", href: "/services/graphic-design" },
-      { text: "Digital Marketing", href: "/services/digital-marketing" },
-      { text: "SEO Optimization", href: "/services/seo" },
-      { text: "IT Solutions", href: "/services/it-solutions" },
+      { text: "Web Development", href: "/services" },
+      { text: "Graphic Design", href: "/services" },
+      { text: "Digital Marketing", href: "/services" },
+      { text: "SEO Optimization", href: "/services" },
+      { text: "IT Solutions", href: "/services" },
     ],
   },
   {
     title: "Company",
     links: [
       { text: "About Us", href: "/about" },
-      { text: "Our Team", href: "/team" },
-      { text: "Careers", href: "/careers" },
-      { text: "Blog", href: "/blog" },
+      { text: "Our Journey", href: "/about" },
+      { text: "Why Us", href: "/about" },
+      { text: "Blog", href: "/" },
     ],
   },
   {
     title: "Support",
     links: [
       { text: "Contact Us", href: "/contact" },
-      { text: "FAQs", href: "/faqs" },
-      { text: "Help Center", href: "/support" },
-      { text: "Customer Support", href: "/support/customer" },
+      { text: "FAQs", href: "/side/faq" },
+      { text: "Help Center", href: "/side/help" },
+      { text: "Customer Support", href: "/side/support" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { text: "Privacy Policy", href: "/privacy-policy" },
-      { text: "Terms of Service", href: "/terms-of-service" },
-      { text: "Cookie Policy", href: "/cookie-policy" },
+      { text: "Privacy Policy", href: "/side/privacy" },
+      { text: "Terms of Service", href: "/side/terms" },
+      { text: "Cookie Policy", href: "/side/cookies" },
     ],
   },
 ];

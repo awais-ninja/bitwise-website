@@ -3,6 +3,7 @@ import "./globals.css";
 import "animate.css";
 import Navbar from "./components/navigation/NavBar";
 import Footer from "./components/footer/Footer";
+import BackToTop from "./primitives/BacktoTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <Navbar />
         {children}
+        <BackToTop />
         <Footer />
       </body>
     </html>
