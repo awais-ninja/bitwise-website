@@ -1,4 +1,6 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import "animate.css";
@@ -28,6 +30,7 @@ export default function RootLayout({ children }) {
         <BackToTop />
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
