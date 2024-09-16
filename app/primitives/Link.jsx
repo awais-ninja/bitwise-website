@@ -2,6 +2,10 @@ import N from "next/link";
 
 const Link = ({ href, children, ...rest }) => {
   // Ensure href is defined before using startsWith
+  if (!href) {
+    return <button {...rest}>{children}</button>;
+  }
+
   const external =
     href && (href.startsWith("http") || href.startsWith("https"));
 

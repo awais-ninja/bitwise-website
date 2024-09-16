@@ -16,33 +16,25 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.wyze-tech.com"),
+  metadataBase:
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : new URL(contactData.baseUrl),
   title: {
-    template: `%s | Wyze-Tech`,
     default: contactData.title,
+    template: `%s | ${contactData.title}`,
   },
   description: contactData.description,
-  keywords: [
-    "Graphics Design",
-    "Website Development",
-    "Website Design",
-    "IT Solutions",
-    "Search Engine Optimization",
-    "Social Media Marketing",
-    "Website Development in USA",
-    "Website Development near me",
-    "Website Development in UK",
-    "Web developer",
-  ],
-  authors: [{ name: "Awais Ahmad", url: "https://www.wyze-tech.com" }],
+  keywords: contactData.keywords,
+  authors: contactData.authors,
   openGraph: {
     title: contactData.title,
     description: contactData.description,
-    url: "https://www.wyze-tech.com",
+    url: contactData.baseUrl,
     siteName: contactData.title,
     images: [
       {
-        url: contactData.og,
+        url: contactData.ogImage.src,
         width: 800,
         height: 600,
       },

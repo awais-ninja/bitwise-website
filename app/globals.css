@@ -6,3 +6,15 @@
   --animate-duration: 800ms;
   --animate-delay: 0.9s;
 }
+
+@layer base {
+  .spinner {
+    transform-origin: center;
+    animation: spinner_kf 0.75s infinite linear;
+  }
+  @keyframes spinner_kf {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

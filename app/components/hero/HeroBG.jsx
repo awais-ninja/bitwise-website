@@ -10,8 +10,10 @@ const HeroBG = () => {
       quality={85}
       sizes="100vw"
       fill
+      role="presentation"
+      aria-hidden="true"
       style={{ objectFit: "cover", objectPosition: "center" }}
-      className="absolute inset-0 opacity-20"
+      className="absolute inset-0 opacity-20 select-none pointer-events-none"
     />
   );
 };

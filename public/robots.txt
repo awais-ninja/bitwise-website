@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://bitwise-website-pi.vercel.app
-
-# Sitemaps
-Sitemap: https://bitwise-website-pi.vercel.app/sitemap.xml

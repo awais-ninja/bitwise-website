@@ -22,17 +22,17 @@ const footerData = [
     title: "Support",
     links: [
       { text: "Contact Us", href: "/contact" },
-      { text: "FAQs", href: "/side/faq" },
-      { text: "Help Center", href: "/side/help" },
-      { text: "Customer Support", href: "/side/support" },
+      { text: "FAQs", href: "/support/faq" },
+      { text: "Help Center", href: "/support/help" },
+      { text: "Customer Support", href: "/support" },
     ],
   },
   {
     title: "Legal",
     links: [
-      { text: "Privacy Policy", href: "/side/privacy" },
-      { text: "Terms of Service", href: "/side/terms" },
-      { text: "Cookie Policy", href: "/side/cookies" },
+      { text: "Privacy Policy", href: "/support/privacy" },
+      { text: "Terms of Service", href: "/support/terms" },
+      { text: "Cookie Policy", href: "/support/cookies" },
     ],
   },
 ];
