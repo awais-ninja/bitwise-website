@@ -12,7 +12,7 @@ const StandOut = () => {
           transformation. Our unique approach ensures we deliver exceptional
           value and results.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-3">
           {inovationData.map((service, index) => (
             <div
               key={index}

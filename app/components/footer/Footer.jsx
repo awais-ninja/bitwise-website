@@ -20,16 +20,15 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="w-full md:w-3/4 flex flex-wrap justify-between gap-8">
-            {footerData.map((section, index) => (
-              <FooterSection
-                key={index}
-                title={section.title}
-                links={section.links}
-              />
-            ))}
-          </div>
+          {footerData.map((section, index) => (
+            <FooterSection
+              key={index}
+              title={section.title}
+              links={section.links}
+            />
+          ))}
         </div>
+
         <div className="mt-12 flex flex-wrap justify-between items-start gap-12">
           <NewsletterForm />
           <FooterContact />

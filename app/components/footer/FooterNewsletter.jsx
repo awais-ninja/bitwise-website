@@ -1,39 +1,67 @@
 "use client";
+
+import subscribeUser from "@/app/actions/subscribeUser";
+import Link from "@/app/primitives/Link";
 import { useState } from "react";
+import LoadingSpinner from "../LoadingSpinner";
+
+const FormButton = ({ state }) => {
+  if (state === "loading")
+    return (
+      <Link
+        className="w-full bg-yellow-300 text-black py-3 rounded-lg flex items-center gap-x-2 justify-center"
+        disabled={true}
+      >
+        <span>Sending</span>
+        <span>
+          <LoadingSpinner />
+        </span>
+      </Link>
+    );
+  if (state === "errored")
+    return (
+      <Link className="w-full bg-rose-800 text-white py-3 rounded-lg hover:bg-black transition-transform duration-300 hover:scale-105 disabled:opacity-75">
+        Submit Again
+      </Link>
+    );
+  if (state === "done")
+    return (
+      <Link
+        className="w-full bg-green-500 text-white py-3 rounded-lg disabled:opacity-75"
+        disabled={true}
+      >
+        Submitted
+      </Link>
+    );
+  return (
+    <Link
+      type="submit"
+      className="w-full bg-primary text-white py-3 rounded-lg hover:bg-black transition-transform duration-300 hover:scale-105"
+    >
+      Subscribe to Newsletter
+    </Link>
+  );
+};
 
 const NewsletterForm = () => {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState("idle");
+  const [error, setError] = useState("");
+  const [data, setData] = useState({ email: "" });
+
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Construct form data
-    const formData = new FormData();
-    formData.append("entry.1568655537", email); // Replace with your actual field ID
-
-    try {
-      // Post data to Google Forms
-      const response = await fetch(
-        "https://docs.google.com/forms/d/e/1FAIpQLSdrTUYm0qyA_J6RAFhhTqc92UMzvBhGQ35z6yB35jLss8on2g/formResponse", // Correct URL
-        {
-          method: "POST",
-          body: formData,
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-        }
-      );
-
-      if (response.ok) {
-        setSubmitted(true);
-        setEmail("");
-      } else {
-        console.error("Failed to submit form.");
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
+    setLoading("loading");
+    const res = await subscribeUser(data);
+    if (res.error) {
+      setError(res.error);
+      return setLoading("errored");
     }
+    return setLoading("done");
   };
 
   return (
@@ -44,21 +72,28 @@ const NewsletterForm = () => {
       <form onSubmit={handleSubmit} className="flex flex-col w-full sm:w-96">
         <input
           type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          name="email"
+          value={data.email}
+          onChange={handleChange}
+          disabled={loading === "loading" || loading === "done"}
           placeholder="you@example.com"
-          className="px-4 py-2 mb-4 border border-primary rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+          className="px-4 py-2 mb-4 border border-primary rounded-md focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-75"
           required
         />
-        <button
-          type="submit"
-          className="bg-primary text-white px-4 py-2 rounded-md hover:bg-black focus:outline-none focus:ring-2 focus:ring-black"
-        >
-          Subscribe
-        </button>
-        {submitted && (
-          <p className="mt-2 text-green-500">Thank you for subscribing!</p>
-        )}
+        <FormButton state={loading} />
+        <span className="text-center mt-1">
+          {loading === "done" && (
+            <p className="mt-2 text-green-500">Thank you for subscribing!</p>
+          )}
+          {loading === "errored" && (
+            <small className=" text-rose-800 w-full">{error}</small>
+          )}
+          {loading === "done" && (
+            <small className=" text-green-500">
+              {data.email} subscribed successfully
+            </small>
+          )}
+        </span>
       </form>
     </div>
   );

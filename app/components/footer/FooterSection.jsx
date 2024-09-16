@@ -1,7 +1,7 @@
 const { default: Link } = require("@/app/primitives/Link");
 
 const FooterSection = ({ title, links }) => (
-  <div className="mb-8 sm:mb-0">
+  <div className="w-full md:w-1/2 lg:w-1/4 mb-8 sm:mb-0">
     <h3 className="text-lg font-semibold mb-4 text-primary">{title}</h3>
     <ul>
       {links.map((link, index) => (
