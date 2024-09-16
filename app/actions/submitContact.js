@@ -7,11 +7,11 @@ const submitContactFrom = async (data) => {
   try {
     const sent = await transport.sendMail({
       from: process.env.MAIL_FROM,
-      to: email,
+      to: "awais.brainloggers@gmail.com",
       subject: `Wyze Tech Contact Form Submission`,
       html: `<h3>Website Contact Form Submission</h3>
-            <p>First Name: ${fName}<br />
-            Last Name: ${lName}<br />
+            Email: ${email}<br />
+            <p>First Name: ${fName} ${lName}<br />
             </p>
             <hr/>
             <p>${message}</p>`,

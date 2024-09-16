@@ -9,7 +9,7 @@ const FormButton = ({ state }) => {
   if (state === "loading")
     return (
       <Link
-        className="w-full bg-yellow-500 text-white py-3 rounded-lg flex items-center gap-x-2 justify-center"
+        className="w-full bg-yellow-300 text-black py-3 rounded-lg flex items-center gap-x-2 justify-center"
         disabled={true}
       >
         <span>Sending</span>
@@ -75,7 +75,7 @@ const HeroForm = () => {
   };
 
   return (
-    <form className="bg-white p-6 rounded-lg shadow-lg" onSubmit={submitForm}>
+    <form className="bg-white p-10 rounded-lg shadow-lg" onSubmit={submitForm}>
       <h2 className="text-lg font-bold mb-4 text-black">Leave Us a Message!</h2>
       <p className="text-sm mb-6 text-black">
         Our team is here to answer your questions about Bitwise Web and Graphic
