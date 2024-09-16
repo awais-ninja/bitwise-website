@@ -8,6 +8,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import Navbar from "./components/navigation/NavBar";
 import Footer from "./components/footer/Footer";
 import BackToTop from "./primitives/BacktoTop";
+import CookieConsentNotice from "./primitives/CookeisPopUp";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,9 +16,9 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Bitwise Web and Graphic Designer | IT Experts",
+  title: "Wyze Tech | Web Dev and IT Solutions",
   description:
-    "Bitwise offers expert web design, graphic design, and IT solutions. Our services include custom website development, creative graphics, and reliable IT support to elevate your digital presence. Experience top-quality results and exceptional service with Bitwise.",
+    "Wyze Tech offers expert web design, graphic design, and IT solutions. Our services include custom website development, creative graphics, and reliable IT support to elevate your digital presence. Experience top-quality results and exceptional service with Wyze Tech.",
 };
 
 export default function RootLayout({ children }) {
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <SpeedInsights />
         <Analytics />
+        <CookieConsentNotice />
       </body>
     </html>
   );

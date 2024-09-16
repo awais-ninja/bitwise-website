@@ -1,9 +1,9 @@
-import WebDesign from "@/app/static/services/web-design.jpg";
-import WebDevelopment from "@/app/static/services/website-development.jpg";
-import SEO from "@/app/static/services/seo.jpg";
-import GraphicDesign from "@/app/static/services/graphics.jpg";
-import SocialMediaMarketing from "@/app/static/services/marketing.jpg";
-import IT from "@/app/static/services/it.jpg";
+import WebDesign from "@/app/static/services/website-design.webp";
+import WebDevelopment from "@/app/static/services/web-dev.webp";
+import SEO from "@/app/static/services/seo.webp";
+import GraphicDesign from "@/app/static/services/graphics.webp";
+import SocialMediaMarketing from "@/app/static/services/marketing.webp";
+import IT from "@/app/static/services/it.webp";
 
 const servicesData = [
   {
@@ -23,7 +23,7 @@ const servicesData = [
     href: "/services",
   },
   {
-    title: "SEO",
+    title: "Search Engine Optimization",
     description:
       "Boost your website rankings and drive organic traffic with our expert SEO services, optimizing your visibility in search engines and increasing conversions.",
     cta: "Read More",

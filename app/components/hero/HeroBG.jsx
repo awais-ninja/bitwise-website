@@ -1,14 +1,17 @@
 import Image from "next/image";
-import BG from "@/app/static/hero/hero-bg.png";
+import BG from "@/app/static/hero/hero-bg.webp";
 
 const HeroBG = () => {
   return (
     <Image
       src={BG}
-      alt="Background"
+      alt="Background Image for Wyze Tech Home Page hero section"
+      priority
+      quality={85}
+      sizes="100vw"
       fill
-      style={{ objectFit: "cover" }}
-      className="absolute inset-0 opacity-30"
+      style={{ objectFit: "cover", objectPosition: "center" }}
+      className="absolute inset-0 opacity-20"
     />
   );
 };

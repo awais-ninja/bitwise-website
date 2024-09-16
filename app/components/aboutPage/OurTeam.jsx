@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import PicOne from "@/app/static/services/seo.jpg";
+import PicOne from "@/app/static/services/seo.webp";
 
 const OurTeam = () => (
   <section className="bg-gray-100 py-12 px-4">

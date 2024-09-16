@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BGServices from "@/app/static/services/bg-services.jpg";
+import BGServices from "@/app/static/services/bg-services.webp";
 
 const HeroSectionServices = () => {
   return (

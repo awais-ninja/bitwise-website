@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center py-3">
           <Logo />
           <div className="hidden md:flex items-center space-x-6">
             {navData.map((item) => (

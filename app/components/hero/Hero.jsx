@@ -6,12 +6,13 @@ import Link from "@/app/primitives/Link";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-gray-800 text-white">
+    <section className="relative bg-black text-white">
       <HeroBG />
       <div className="relative container mx-auto px-4 py-16 lg:flex lg:items-center lg:justify-between lg:py-24">
         <div className="lg:w-1/2 lg:pr-8">
           <h1 className="text-3xl uppercase mb-4 lg:text-5xl lg:mb-6">
-            Take Your Business to the Next Level with <ExampleComponent />
+            Take Your Business to the Next Level with <br />
+            <ExampleComponent />
           </h1>
           <p className="text-lg mb-6 lg:text-xl lg:mb-8">
             Harness the Power of SEO, Social Media, eCommerce, and Cutting-Edge

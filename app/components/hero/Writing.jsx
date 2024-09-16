@@ -6,9 +6,9 @@ const ExampleComponent = () => {
   return (
     <TypeAnimation
       sequence={[
-        "Top-Notch Digital Marketing",
+        "Digital Marketing",
         2000,
-        "Exceptional Website Development",
+        "Website Development",
         2000,
         "Stunning Website Design",
         2000,
@@ -25,7 +25,7 @@ const ExampleComponent = () => {
       speed={60}
       style={{
         fontSize: "inherit",
-        color: "#fb4d00",
+        color: "#8b12fcff",
         display: "inline-block",
       }}
       repeat={Infinity}
