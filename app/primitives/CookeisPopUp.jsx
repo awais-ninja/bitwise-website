@@ -1,25 +1,31 @@
 "use client";
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import { FiAlertCircle } from "react-icons/fi";
+import useLocalStorage from "../hooks/useLocalStorage";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const CookieConsentNotice = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [consent, setConsent] = useLocalStorage("consent", null);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleAccept = () => {
-    console.log("Cookies accepted");
-    setIsOpen(false);
+    setConsent("granted");
+    sendGTMEvent("consent-mode", "buttonClicked", { value: "granted" });
   };
 
   const handleReject = () => {
-    console.log("Cookies rejected");
-    setIsOpen(false);
+    setConsent("denied");
+    sendGTMEvent("consent-mode", "buttonClicked", { value: "denied" });
   };
 
-  const handleLearnMore = () => {
-    console.log("Learn more clicked");
-  };
-
-  if (!isOpen) return null;
+  if (!isClient || consent !== null) {
+    return null;
+  }
 
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t-4 border-blue-500 p-6 shadow-lg">
@@ -33,12 +39,6 @@ const CookieConsentNotice = () => {
           </p>
         </div>
         <div className="flex flex-wrap gap-4 justify-end">
-          <button
-            onClick={handleLearnMore}
-            className="text-lg text-blue-600 hover:underline"
-          >
-            Learn more and customize
-          </button>
           <button
             onClick={handleReject}
             className="px-6 py-3 text-lg text-gray-700 border-2 border-gray-300 rounded-lg hover:bg-gray-100 transition-colors"

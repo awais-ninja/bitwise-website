@@ -9,22 +9,59 @@ import Navbar from "./components/navigation/NavBar";
 import Footer from "./components/footer/Footer";
 import BackToTop from "./primitives/BacktoTop";
 import CookieConsentNotice from "./primitives/CookeisPopUp";
-
+import contactData from "./data/contact";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 export const metadata = {
-  title: "Wyze Tech | Web Dev and IT Solutions",
-  description:
-    "Wyze Tech offers expert web design, graphic design, and IT solutions. Our services include custom website development, creative graphics, and reliable IT support to elevate your digital presence. Experience top-quality results and exceptional service with Wyze Tech.",
+  metadataBase: new URL("https://www.wyze-tech.com"),
+  title: {
+    template: `%s | Wyze-Tech`,
+    default: contactData.title,
+  },
+  description: contactData.description,
+  keywords: [
+    "Graphics Design",
+    "Website Development",
+    "Website Design",
+    "IT Solutions",
+    "Search Engine Optimization",
+    "Social Media Marketing",
+    "Website Development in USA",
+    "Website Development near me",
+    "Website Development in UK",
+    "Web developer",
+  ],
+  authors: [{ name: "Awais Ahmad", url: "https://www.wyze-tech.com" }],
+  openGraph: {
+    title: contactData.title,
+    description: contactData.description,
+    url: "https://www.wyze-tech.com",
+    siteName: contactData.title,
+    images: [
+      {
+        url: contactData.og,
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: contactData.title,
+    description: contactData.description,
+    images: [contactData.og],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-CRP5WEVWCS" />
+      <GoogleTagManager gtmId="G-VQ31N0WZS4" />
       <body className={poppins.className}>
         <Navbar />
         {children}
