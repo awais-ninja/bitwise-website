@@ -9,10 +9,10 @@ const page = () => {
         </h1>
         <div className="space-y-6 text-gray-700">
           <p>
-            At <strong>Bitwise</strong>, we use cookies to enhance your browsing
-            experience and ensure our website functions smoothly. This Cookies
-            Policy explains what cookies are, how we use them, and the options
-            you have regarding their use.
+            At <strong>Wyze Tech</strong>, we use cookies to enhance your
+            browsing experience and ensure our website functions smoothly. This
+            Cookies Policy explains what cookies are, how we use them, and the
+            options you have regarding their use.
           </p>
 
           <h2 className="text-2xl font-semibold text-primary">
@@ -120,15 +120,15 @@ const page = () => {
           <h2 className="text-2xl font-semibold text-primary">Contact Us</h2>
           <div>
             If you have any questions about this Cookies Policy or how we use
-            cookies at <strong>Bitwise</strong>, feel free to reach out to us:
+            cookies at <strong>Wyze Tech</strong>, feel free to reach out to us:
             <ul className="list-disc list-inside ml-4">
               <li>
                 Email:
                 <Link
-                  href="mailto:awais.brainloggers@gmail.com"
+                  href="mailto:info@wyzetech.com"
                   className="text-primary hover:underline"
                 >
-                  awais.brainloggers@gmail.com
+                  info@wyzetech.com
                 </Link>
               </li>
               <li>Phone: +92 304 9978 288</li>

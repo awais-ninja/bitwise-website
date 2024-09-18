@@ -9,7 +9,7 @@ const page = () => {
         </h1>
         <div className="space-y-6 text-gray-700">
           <p>
-            Welcome to <strong>Bitwise</strong>! By accessing or using our
+            Welcome to <strong>Wyze Tech</strong>! By accessing or using our
             website and services, you agree to comply with and be bound by the
             following terms and conditions. Please read these carefully.
           </p>
@@ -18,19 +18,20 @@ const page = () => {
             1. Acceptance of Terms
           </h2>
           <p>
-            By accessing and using the services of <strong>Bitwise</strong>, you
-            accept and agree to be bound by these Terms of Service. If you do
-            not agree to these terms, you may not use our website or services.
+            By accessing and using the services of <strong>Wyze Tech</strong>,
+            you accept and agree to be bound by these Terms of Service. If you
+            do not agree to these terms, you may not use our website or
+            services.
           </p>
 
           <h2 className="text-2xl font-semibold text-primary">
             2. Modifications to Terms
           </h2>
           <p>
-            <strong>Bitwise</strong> reserves the right to modify these terms at
-            any time. Any changes will be effective upon posting. Your continued
-            use of our services after changes have been posted constitutes your
-            acceptance of the modified terms.
+            <strong>Wyze Tech</strong> reserves the right to modify these terms
+            at any time. Any changes will be effective upon posting. Your
+            continued use of our services after changes have been posted
+            constitutes your acceptance of the modified terms.
           </p>
 
           <h2 className="text-2xl font-semibold text-primary">
@@ -86,7 +87,7 @@ const page = () => {
           </h2>
           <p>
             All content on the website, including text, graphics, logos, images,
-            and software, is the property of <strong>Bitwise</strong> or its
+            and software, is the property of <strong>Wyze Tech</strong> or its
             licensors. You may not reproduce, distribute, or create derivative
             works of any content without our prior written permission.
           </p>
@@ -95,7 +96,7 @@ const page = () => {
             7. Limitation of Liability
           </h2>
           <p>
-            <strong>Bitwise</strong> will not be liable for any direct,
+            <strong>Wyze Tech</strong> will not be liable for any direct,
             indirect, incidental, or consequential damages resulting from your
             use of or inability to use our website or services. This includes
             but is not limited to damages for loss of profits, data, or other
@@ -132,10 +133,10 @@ const page = () => {
               <li>
                 Email:
                 <Link
-                  href="mailto:awais.brainloggers@gmail.com"
+                  href="mailto:info@wyze-tech.com"
                   className="text-primary hover:underline"
                 >
-                  awais.brainloggers@gmail.com
+                  info@wyze-tech.com
                 </Link>
               </li>
               <li>Phone: +92 304 9978 288</li>

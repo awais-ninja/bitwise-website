@@ -1,38 +1,38 @@
 const faqData = [
   {
-    question: "How can we help you right now?",
+    question: "What types of support are available to me right now?",
     answer:
-      "Our team is available to assist with any queries you may have. Please feel free to contact us through the form or schedule a consultation.",
+      "Our team at Wyze Tech is here to provide support through various channels. You can reach out via our contact form, schedule a call, or directly email us with your questions and concerns.",
   },
   {
-    question: "What services do you offer?",
+    question: "Which services do you specialize in?",
     answer:
-      "We offer web development, graphic design, and IT solutions tailored to your business needs.",
+      "Wyze Tech specializes in web development, graphic design, and comprehensive IT solutions tailored to enhance your business’s online presence and efficiency.",
   },
   {
-    question: "How can I get started with BITWISE?",
+    question: "How do I begin working with your team?",
     answer:
-      "Contact us through the form below or schedule a consultation to discuss your requirements and get started.",
+      "Getting started with Wyze Tech is easy! Fill out our contact form or schedule a consultation to discuss your project requirements and how we can assist you.",
   },
   {
-    question: "Do you provide customized solutions?",
+    question: "Can you provide solutions tailored to my specific needs?",
     answer:
-      "Yes, we offer customized solutions to meet your specific needs. Let us know your requirements, and we’ll create a plan that fits.",
+      "Yes, Wyze Tech offers bespoke solutions designed to address your unique requirements. Share your needs with us, and we’ll develop a customized plan to meet them.",
   },
   {
-    question: "What is your pricing structure?",
+    question: "What should I expect in terms of pricing?",
     answer:
-      "Our pricing is flexible and depends on the services you need. We offer competitive rates and customized packages.",
+      "Our pricing at Wyze Tech is designed to be flexible and competitive. It varies based on the scope and scale of the services you choose. We offer tailored packages to fit different needs and budgets.",
   },
   {
-    question: "Can you help with SEO optimization?",
+    question: "Do you offer services for improving SEO?",
     answer:
-      "Absolutely, we provide comprehensive SEO services to improve your website’s visibility and performance.",
+      "Yes, Wyze Tech provides comprehensive SEO services aimed at enhancing your website’s search engine rankings and overall visibility.",
   },
   {
-    question: "How can I track the progress of my project?",
+    question: "How will I stay informed about my project's status?",
     answer:
-      "We keep you updated with regular progress reports and are always available for any questions or concerns.",
+      "At Wyze Tech, we provide regular updates and detailed progress reports. Our team is always available to answer your questions and keep you informed throughout the project.",
   },
 ];
 

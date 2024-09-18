@@ -4,7 +4,7 @@ import { useState } from "react";
 import Logo from "../../primitives/Logo.jsx";
 import Link from "../../primitives/Link.jsx";
 import navData from "../../data/navigation/NavData.js";
-import NavItem from "./NavItems.jsx";
+import NavItem from "./NavItems.jsx"; // Import NavItem correctly
 import {
   FaFacebook,
   PiInstagramLogoFill,
@@ -20,7 +20,7 @@ const MobileMenu = () => {
   return (
     <>
       <button className="md:hidden" onClick={toggleMenu}>
-        <IoMdMenu className="h-6 w-6 text-gray-600" />
+        <IoMdMenu className="h-6 w-6 text-primary" />
       </button>
 
       <div
@@ -38,6 +38,8 @@ const MobileMenu = () => {
           <div className="flex flex-col flex-grow p-4 space-y-2">
             {navData.map((item) => (
               <NavItem href={item.href} key={item.id} onClick={toggleMenu}>
+                {" "}
+                {/* Pass toggleMenu */}
                 {item.title}
               </NavItem>
             ))}
@@ -46,15 +48,15 @@ const MobileMenu = () => {
             <button className="w-full bg-primary text-white px-4 py-3 rounded-md hover:bg-black transition-transform duration-300 hover:scale-105 ">
               Book a Meeting
             </button>
-            <div className="flex justify-center space-x-6">
+            <div className="flex justify-center space-x-6 mt-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/MirzaAwais420"
                 className="text-gray-600 hover:text-primary transition-colors duration-300"
               >
                 <FaFacebook size={28} />
               </Link>
               <Link
-                href="#"
+                href="https://www.instagram.com/mirza.awais.official/"
                 className="text-gray-600 hover:text-primary transition-colors duration-300"
               >
                 <PiInstagramLogoFill size={28} />

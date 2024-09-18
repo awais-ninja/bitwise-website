@@ -1,6 +1,6 @@
 import Link from "@/app/primitives/Link";
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <section className="my-12 px-4 max-w-4xl mx-auto">
@@ -14,26 +14,26 @@ const page = () => {
           <div className="space-y-4">
             <div>
               <h3 className="text-xl font-semibold">
-                What services does Bitwise offer?
+                What services does Wyze Tech offer?
               </h3>
               <p>
-                Bitwise offers a range of services including digital marketing,
-                website development, and IT solutions. We specialize in
-                enhancing your online presence and optimizing your digital
+                Wyze Tech offers a range of services including digital
+                marketing, website development, and IT solutions. We specialize
+                in enhancing your online presence and optimizing your digital
                 strategy.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold">
-                How can I contact Bitwise?
+                How can I contact Wyze Tech?
               </h3>
               <p>
-                You can contact Bitwise via email at
+                You can contact Wyze Tech via email at
                 <Link
-                  href="mailto:awais.brainloggers@gmail.com"
+                  href="mailto:info@wyze-tech.com"
                   className="text-primary hover:underline"
                 >
-                  awais.brainloggers@gmail.com
+                  info@wyze-tech.com
                 </Link>
                 , or call us at +92 304 9978 288. You can also reach us through
                 our LinkedIn profile:
@@ -88,14 +88,14 @@ const page = () => {
             For any support-related questions or issues, please reach out to our
             support team:
           </p>
-          <ul className="list-disc list-inside ml-4 space-y-2">
+          <ul className="list-disc list-insupport ml-4 space-y-2">
             <li>
               Email:{" "}
               <Link
-                href="mailto:awais.brainloggers@gmail.com"
+                href="mailto:info@wyze-tech.com"
                 className="text-primary hover:underline"
               >
-                awais.brainloggers@gmail.com
+                info@wyze-tech.com
               </Link>
             </li>
             <li>Phone: +92 304 9978 288</li>
@@ -105,15 +105,18 @@ const page = () => {
             Additional Resources
           </h2>
           <p>Explore the following resources for more information:</p>
-          <ul className="list-disc list-inside ml-4 space-y-2">
+          <ul className="list-disc list-insupport ml-4 space-y-2">
             <li>
-              <Link href="/side/terms" className="text-primary hover:underline">
+              <Link
+                href="/support/terms"
+                className="text-primary hover:underline"
+              >
                 Terms of Service
               </Link>
             </li>
             <li>
               <Link
-                href="/side/privacy"
+                href="/support/privacy"
                 className="text-primary hover:underline"
               >
                 Privacy Policy
@@ -121,14 +124,17 @@ const page = () => {
             </li>
             <li>
               <Link
-                href="/side/cookies"
+                href="/support/cookies"
                 className="text-primary hover:underline"
               >
                 Cookies Policy
               </Link>
             </li>
             <li>
-              <Link href="/side/faq" className="text-primary hover:underline">
+              <Link
+                href="/support/faq"
+                className="text-primary hover:underline"
+              >
                 FAQs
               </Link>
             </li>
@@ -139,4 +145,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

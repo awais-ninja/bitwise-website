@@ -4,6 +4,10 @@ import HeroSectionServices from "../components/services/HeroSectionServices";
 import { ReadyToStart } from "../components/aboutPage";
 import AllServiceSection from "../components/services/AllServiceSection";
 
+export const metadata = {
+  title: "Services",
+};
+
 const Page = () => {
   return (
     <>

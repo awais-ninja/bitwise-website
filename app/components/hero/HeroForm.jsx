@@ -76,10 +76,14 @@ const HeroForm = () => {
 
   return (
     <form className="bg-white p-10 rounded-lg shadow-lg" onSubmit={submitForm}>
-      <h2 className="text-lg font-bold mb-4 text-black">Leave Us a Message!</h2>
-      <p className="text-sm mb-6 text-black">
-        Our team is here to answer your questions about Bitwise Web and Graphic
-        Designer | IT Experts and how we can enhance your digital presence.
+      <h2 className="text-lg font-bold mb-4 text-primary">
+        Leave Us a Message!
+      </h2>
+      <p className="text-md mb-6 text-black">
+        Our team is here to answer your questions about Wyze Tech Web Dev and IT
+        Solutions and how we can enhance your digital presence with expert Web
+        Development, Graphic Design, Digital Marketing, Email Marketing, and IT
+        Solutions tailored for your business growth.
       </p>
       <div className="mb-4">
         <h2 className="text-xl font-medium mb-2">Full Name</h2>

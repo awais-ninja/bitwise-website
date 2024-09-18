@@ -10,39 +10,39 @@ import {
 const inovationData = [
   {
     icon: <FaLightbulb className="text-primary w-10 h-10" />,
-    title: "Innovative Strategies",
+    title: "Innovative Digital Strategies",
     description:
-      "We employ cutting-edge strategies to ensure your business stays ahead of the competition.",
+      "We implement cutting-edge digital marketing strategies to keep your business at the forefront of industry trends and ahead of the competition.",
   },
   {
     icon: <FaChartLine className="text-primary w-10 h-10" />,
-    title: "Data-Driven Results",
+    title: "Data-Driven SEO Results",
     description:
-      "Our decisions are backed by data, ensuring the best outcomes for your business.",
+      "Our data-driven approach ensures optimal SEO performance, enhancing your website's visibility and driving organic traffic for measurable growth.",
   },
   {
     icon: <FaGlobe className="text-primary w-10 h-10" />,
-    title: "Global Reach",
+    title: "Global IT Solutions",
     description:
-      "We have a global perspective and deliver solutions that work across different markets.",
+      "Offering a global perspective, we provide IT solutions that are scalable and effective across diverse markets and industries.",
   },
   {
     icon: <FaHandshake className="text-primary w-10 h-10" />,
-    title: "Customer Support",
+    title: "Exceptional Customer Support",
     description:
-      "We provide exceptional customer support to help you every step of the way.",
+      "Experience top-notch customer support with personalized assistance to address your digital marketing and IT needs, ensuring a seamless experience.",
   },
   {
     icon: <FaCogs className="text-primary w-10 h-10" />,
-    title: "Technical Expertise",
+    title: "Advanced Technical Expertise",
     description:
-      "Our team of experts ensures the highest quality of technical solutions for your business.",
+      "Our team of IT professionals delivers high-quality technical solutions, leveraging the latest technologies to enhance your business operations.",
   },
   {
     icon: <FaDollarSign className="text-primary w-10 h-10" />,
-    title: "Cost-Effective Solutions",
+    title: "Cost-Effective Web Development",
     description:
-      "We offer solutions that provide the best value for your investment.",
+      "We provide cost-effective web development solutions that deliver exceptional value, optimizing your investment with innovative technology and design.",
   },
 ];
 

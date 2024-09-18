@@ -15,6 +15,7 @@ const footerData = [
       { text: "About Us", href: "/about" },
       { text: "Our Journey", href: "/about" },
       { text: "Why Us", href: "/about" },
+      { text: "For StartUps", href: "/startup" },
       { text: "Blog", href: "/" },
     ],
   },

@@ -1,6 +1,6 @@
 import Link from "@/app/primitives/Link";
 
-const page = () => {
+const Page = () => {
   return (
     <div>
       <section className="my-12 px-4 max-w-4xl mx-auto">
@@ -16,12 +16,12 @@ const page = () => {
           </p>
           <ul className="list-disc list-inside ml-4 space-y-2">
             <li>
-              Email:
+              Email: {""}
               <Link
-                href="mailto:awais.brainloggers@gmail.com"
+                href="mailto:info@wyze-tech.com"
                 className="text-primary hover:underline"
               >
-                awais.brainloggers@gmail.com
+                info@wyze-tech.com
               </Link>
             </li>
             <li>Phone: +92 304 9978 288</li>
@@ -37,12 +37,12 @@ const page = () => {
           </p>
           <ul className="list-disc list-inside ml-4 space-y-2">
             <li>
-              Email your issue details to
+              Email your issue details to {""}
               <Link
-                href="mailto:awais.brainloggers@gmail.com"
+                href="mailto:info@wyze-tech.com"
                 className="text-primary hover:underline"
               >
-                awais.brainloggers@gmail.com
+                info@wyze-tech.com
               </Link>
             </li>
           </ul>
@@ -55,7 +55,10 @@ const page = () => {
           </p>
           <ul className="list-disc list-inside ml-4 space-y-2">
             <li>
-              <Link href="/side/faq" className="text-primary hover:underline">
+              <Link
+                href="/support/faq"
+                className="text-primary hover:underline"
+              >
                 FAQs
               </Link>
             </li>
@@ -76,4 +79,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

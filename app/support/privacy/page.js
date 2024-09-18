@@ -8,150 +8,144 @@ const Page = () => {
       </h1>
       <div className="space-y-6 text-gray-700">
         <p>
-          At <strong>Bitwise</strong>, we are committed to protecting your
-          privacy and ensuring that your personal information is handled in a
-          safe and responsible manner. This Privacy Policy explains what
-          personal data we collect, how we use it, and the rights you have
-          regarding your data.
+          Welcome to <strong>Wyze Tech</strong>. Your privacy is of utmost
+          importance to us. This Privacy Policy outlines how we collect, use,
+          and safeguard your personal information when you visit our website and
+          use our services.
         </p>
 
         <h2 className="text-2xl font-semibold text-primary">
-          Information We Collect
+          1. Information We Collect
         </h2>
         <p>
           We collect the following types of information:
           <ul className="list-disc list-inside ml-4">
             <li>
               <strong>Personal Information:</strong> This includes your name,
-              email address, phone number, and any other information you provide
-              directly through forms on our website.
+              email address, phone number, and other information you voluntarily
+              provide to us.
             </li>
             <li>
-              <strong>Usage Data:</strong> We collect data on how you use our
-              website, including your IP address, browser type, pages visited,
-              and the time and date of your visit.
+              <strong>Usage Data:</strong> We collect data on your interactions
+              with our website, such as IP address, browser type, pages viewed,
+              and time spent on the site.
             </li>
             <li>
-              <strong>Cookies:</strong> We use cookies to improve your browsing
-              experience. Please refer to our{" "}
+              <strong>Cookies:</strong> We use cookies to enhance your browsing
+              experience. For details, please refer to our{" "}
               <Link
                 href="/cookies-policy"
                 className="text-primary hover:underline"
               >
                 Cookies Policy
-              </Link>{" "}
-              for more information.
+              </Link>
+              .
             </li>
           </ul>
         </p>
 
         <h2 className="text-2xl font-semibold text-primary">
-          How We Use Your Information
+          2. How We Use Your Information
         </h2>
         <p>
-          We may use the information we collect for the following purposes:
+          The information we collect is used for the following purposes:
           <ul className="list-disc list-inside ml-4">
-            <li>To provide and maintain our services.</li>
-            <li>To improve our website and user experience.</li>
+            <li>To provide and improve our services.</li>
             <li>
-              To send marketing communications, updates, and promotional offers
-              (with your consent).
+              To communicate with you, including sending updates and marketing
+              materials (with your consent).
             </li>
-            <li>To respond to your inquiries and provide customer support.</li>
-            <li>To comply with legal obligations and resolve disputes.</li>
-          </ul>
-        </p>
-
-        <h2 className="text-2xl font-semibold text-primary">
-          How We Share Your Information
-        </h2>
-        <p>
-          We respect your privacy, and we do not sell or rent your personal
-          information to third parties. However, we may share your data with:
-          <ul className="list-disc list-inside ml-4">
+            <li>To respond to your inquiries and provide support.</li>
             <li>
-              <strong>Service Providers:</strong> We may share your information
-              with trusted third-party service providers who assist us in
-              operating our website or conducting our business.
-            </li>
-            <li>
-              <strong>Legal Requirements:</strong> We may disclose your
-              information if required by law or to protect the rights, property,
-              or safety of Bitwise, our users, or others.
+              To ensure the security of our website and comply with legal
+              obligations.
             </li>
           </ul>
         </p>
 
         <h2 className="text-2xl font-semibold text-primary">
-          Your Data Protection Rights
+          3. Sharing Your Information
         </h2>
         <p>
-          You have certain rights regarding your personal information under data
-          protection laws, including:
+          We do not sell or rent your personal information. We may share your
+          data with:
           <ul className="list-disc list-inside ml-4">
             <li>
-              <strong>Access:</strong> You have the right to request a copy of
-              the personal data we hold about you.
+              <strong>Service Providers:</strong> Third parties that assist us
+              in operating our website and conducting business.
             </li>
             <li>
-              <strong>Correction:</strong> You can request that we correct any
-              inaccurate or incomplete information.
-            </li>
-            <li>
-              <strong>Deletion:</strong> You have the right to request the
-              deletion of your personal data in certain circumstances.
-            </li>
-            <li>
-              <strong>Objection:</strong> You can object to the processing of
-              your personal data for direct marketing purposes.
-            </li>
-            <li>
-              <strong>Withdrawal of Consent:</strong> If we are processing your
-              personal data based on your consent, you have the right to
-              withdraw that consent at any time.
+              <strong>Legal Requirements:</strong> If required by law or to
+              protect the rights, property, or safety of Wyze Tech or others.
             </li>
           </ul>
         </p>
 
         <h2 className="text-2xl font-semibold text-primary">
-          How We Protect Your Data
+          4. Your Data Protection Rights
         </h2>
         <p>
-          We take data security seriously and use reasonable technical and
-          organizational measures to protect your personal information from
-          unauthorized access, alteration, disclosure, or destruction.
+          Under data protection laws, you have the following rights:
+          <ul className="list-disc list-inside ml-4">
+            <li>
+              <strong>Access:</strong> Request a copy of the personal data we
+              hold about you.
+            </li>
+            <li>
+              <strong>Correction:</strong> Request correction of any inaccurate
+              or incomplete information.
+            </li>
+            <li>
+              <strong>Deletion:</strong> Request the deletion of your personal
+              data under certain conditions.
+            </li>
+            <li>
+              <strong>Objection:</strong> Object to processing of your data for
+              direct marketing purposes.
+            </li>
+            <li>
+              <strong>Withdrawal of Consent:</strong> Withdraw your consent to
+              data processing where applicable.
+            </li>
+          </ul>
         </p>
 
         <h2 className="text-2xl font-semibold text-primary">
-          Retention of Your Data
+          5. Data Security
         </h2>
         <p>
-          We retain your personal information only for as long as necessary to
-          fulfill the purposes outlined in this Privacy Policy or to comply with
-          legal requirements.
+          We implement reasonable security measures to protect your data from
+          unauthorized access, alteration, or disclosure.
         </p>
 
         <h2 className="text-2xl font-semibold text-primary">
-          Changes to This Privacy Policy
+          6. Data Retention
         </h2>
         <p>
-          We may update this Privacy Policy from time to time to reflect changes
-          in our practices or for operational, legal, or regulatory reasons.
-          Please review this page periodically for any updates.
+          We retain your data only for as long as necessary to fulfill the
+          purposes outlined in this policy or to comply with legal requirements.
         </p>
 
-        <h2 className="text-2xl font-semibold text-primary">Contact Us</h2>
+        <h2 className="text-2xl font-semibold text-primary">
+          7. Changes to This Privacy Policy
+        </h2>
         <p>
-          If you have any questions or concerns about this Privacy Policy or how
-          we handle your data, feel free to reach out to us:
+          We may update this Privacy Policy periodically. Please review this
+          page regularly to stay informed about any changes.
+        </p>
+
+        <h2 className="text-2xl font-semibold text-primary">8. Contact Us</h2>
+        <p>
+          If you have any questions about this Privacy Policy or how we handle
+          your data, please contact us at:
           <ul className="list-disc list-inside ml-4">
             <li>
               Email:
               <Link
-                href="mailto:awais.brainloggers@gmail.com"
+                href="mailto:info@wyze-tech.com"
                 className="text-primary hover:underline"
               >
-                awais.brainloggers@gmail.com
+                info@wyze-tech.com
               </Link>
             </li>
             <li>Phone: +92 304 9978 288</li>

@@ -7,16 +7,23 @@ import Link from "@/app/primitives/Link";
 const HeroSection = () => {
   return (
     <section className="relative bg-black text-white">
-      <HeroBG />
+      <div className="absolute inset-0 hidden md:block">
+        <HeroBG />
+      </div>
       <div className="relative container mx-auto px-4 py-16 lg:flex lg:items-center lg:justify-between lg:py-24">
         <div className="lg:w-1/2 lg:pr-8">
           <h1 className="text-3xl uppercase mb-4 lg:text-5xl lg:mb-6">
-            Take Your Business to the Next Level with <br />
-            <ExampleComponent />
+            Take Your Small Business or Startup to the Next Level with
+            <br />
+            <span className="inline-block">
+              {" "}
+              <ExampleComponent />{" "}
+            </span>
           </h1>
           <p className="text-lg mb-6 lg:text-xl lg:mb-8">
-            Harness the Power of SEO, Social Media, eCommerce, and Cutting-Edge
-            Web Solutions to Maximize Your ROI.
+            Leverage Expert SEO, Social Media Marketing, eCommerce Strategies,
+            and Advanced Website Development to Boost Your Return on Investment
+            (ROI) and Drive Business Growth.
           </p>
 
           <Link

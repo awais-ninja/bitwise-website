@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+
       <WhyUs />
       <ServicesSection />
       <StandOut />

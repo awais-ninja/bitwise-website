@@ -1,32 +1,33 @@
-import Vision from "@/app/static/about/vision.jpg";
-import MilestonesImage from "@/app/static/about/milestone.jpg";
-import ExpansionImage from "@/app/static/about/expansion.jpg";
-import LeadershipImage from "@/app/static/about/leadership.jpg";
+import Vision from "@/app/static/about/vision.webp";
+import MilestonesImage from "@/app/static/about/milestone.webp";
+import ExpansionImage from "@/app/static/about/expansion.webp";
+import LeadershipImage from "@/app/static/about/leadership.webp";
 
 const aboutData = [
   {
     title: "Our Vision",
     description:
-      "BitWise started with a vision to revolutionize digital solutions. Our initial focus was on crafting visually compelling websites and creative graphics that set our clients apart in the market. We aimed to create impactful digital experiences that drive business growth.",
+      "At Wyze Tech, our vision is to transform the digital landscape with innovative web solutions and cutting-edge design. We specialize in creating dynamic, user-centric websites and visually engaging graphics that help businesses stand out. Our goal is to deliver impactful digital experiences that drive measurable growth and elevate brand presence in a competitive market.",
     imageUrl: Vision,
   },
   {
-    title: "Early Milestones",
+    title: "Key Milestones",
     description:
-      "During our formative years, we built a robust team dedicated to excellence. Our efforts were centered around refining our service offerings, enhancing our design capabilities, and establishing a reputation for quality and reliability in the industry.",
+      "Since our inception, Wyze Tech has achieved significant milestones in digital excellence. From building a skilled team of experts to refining our service offerings, we have established a strong reputation for delivering high-quality web development, graphic design, and IT solutions. Our commitment to innovation and customer satisfaction has positioned us as a trusted partner for businesses seeking top-tier digital services.",
     imageUrl: MilestonesImage,
   },
   {
-    title: "Expansion",
+    title: "Expansion and Growth",
     description:
-      "As our expertise grew, so did our service range. We expanded our portfolio to include comprehensive IT solutions and advanced digital marketing strategies. This phase marked our transition from a design-focused agency to a full-service digital solutions provider.",
+      "As we have expanded our expertise, Wyze Tech has broadened its service portfolio to include advanced IT solutions and comprehensive digital marketing strategies. Our growth reflects our evolution from a niche design agency to a full-service digital solutions provider. We now offer a wide range of services designed to optimize online performance, enhance user engagement, and drive business success.",
     imageUrl: ExpansionImage,
   },
   {
-    title: "Leadership",
+    title: "Leadership and Innovation",
     description:
-      "Today, BitWise stands at the forefront of the digital services industry. We are recognized for our innovative approach, commitment to client success, and leadership in web development, graphic design, and IT solutions. Our client-centric approach drives us to continually exceed expectations.",
+      "Wyze Tech is at the forefront of the digital services industry, recognized for our innovative approach and leadership in web development, graphic design, and IT solutions. Our client-centric approach ensures we deliver exceptional results, leveraging our deep industry knowledge and commitment to excellence. We continuously strive to exceed expectations and drive the success of our clients in the ever-evolving digital landscape.",
     imageUrl: LeadershipImage,
   },
 ];
+
 export default aboutData;
