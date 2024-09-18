@@ -14,7 +14,7 @@ const Navbar = () => {
             {navData.map((item) => (
               <NavItem
                 href={item.href}
-                key={item.id}
+                key={item.title}
                 className={
                   item.title === "For Startups"
                     ? "wiggle-effect bg-primary p-1 text-white rounded hover:text-white"

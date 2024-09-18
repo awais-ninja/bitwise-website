@@ -5,24 +5,23 @@ import Link from "@/app/primitives/Link";
 
 const HeroSectionServices = () => {
   return (
-    <section className="relative min-h-screen flex items-center">
+    <section className="relative py-16 md:py-24 flex items-center overflow-hidden">
       {/* Background Image (hidden on mobile) */}
-      <div className="absolute inset-0 hidden md:block">
+      <div className="absolute inset-0 md:block h-full w-full bg-yellow-200 -z-[1]">
         <Image
           src={BGServices}
           alt="Background"
-          fill
-          style={{ objectFit: "cover" }}
+          className="object-cover w-full h-full"
           quality={80}
           priority
         />
-        <div className="absolute inset-0 bg-black opacity-80"></div>
+        <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
       </div>
 
       {/* Mobile Background Gradient */}
-      <div className="absolute inset-0 md:hidden bg-gradient-to-b from-[#8E2DE2] to-[#4A00E0]"></div>
+      {/* <div className="absolute inset-0 md:hidden bg-gradient-to-b from-[#8E2DE2] to-[#4A00E0]"></div> */}
 
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative z-10 container mx-auto px-6 md:px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight  text-secondary md:text-primary">
@@ -37,7 +36,7 @@ const HeroSectionServices = () => {
             </p>
             <Link
               href="/contact"
-              className="inline-block py-3 px-6 md:bg-primary sm:bg-white text-primary hover:sm:text-white md:text-white font-semibold rounded-lg shadow-lg hover:bg-primary/55 md:hover:bg-black  transition-all duration-300"
+              className="inline-block py-3 px-6 md:bg-primary bg-white text-primary hover:sm:text-white md:text-white font-semibold rounded-lg shadow-lg hover:bg-primary/55 md:hover:bg-black  transition-all duration-300"
             >
               Contact Now
             </Link>
@@ -48,9 +47,7 @@ const HeroSectionServices = () => {
             <Image
               src={BGPage}
               alt="Our Services"
-              fill
-              style={{ objectFit: "cover" }}
-              className="rounded-lg shadow-xl"
+              className="rounded-lg shadow-xl object-cover w-full h-auto"
               priority
             />
           </div>

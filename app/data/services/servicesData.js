@@ -13,6 +13,7 @@ const servicesData = [
     cta: "Read More →",
     icon: WebDesign,
     href: "/services",
+    key: "key-1",
   },
   {
     title: "Web Development Solutions",
@@ -21,6 +22,7 @@ const servicesData = [
     cta: "Read More →",
     icon: WebDevelopment,
     href: "/services",
+    key: "key-2",
   },
   {
     title: "SEO Optimization Services",
@@ -29,6 +31,7 @@ const servicesData = [
     cta: "Read More →",
     icon: SEO,
     href: "/services",
+    key: "key-3",
   },
   {
     title: "Creative Graphic Design",
@@ -37,6 +40,7 @@ const servicesData = [
     cta: "Read More →",
     icon: GraphicDesign,
     href: "/services",
+    key: "key-4",
   },
   {
     title: "Social Media Marketing Strategies",
@@ -45,6 +49,7 @@ const servicesData = [
     cta: "Read More →",
     icon: SocialMediaMarketing,
     href: "/services",
+    key: "key-5",
   },
   {
     title: "Comprehensive IT Solutions",
@@ -53,6 +58,7 @@ const servicesData = [
     cta: "Read More →",
     icon: IT,
     href: "/services",
+    key: "key-6",
   },
 ];
 

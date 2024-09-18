@@ -8,6 +8,7 @@ const footerData = [
       { text: "SEO Optimization", href: "/services" },
       { text: "IT Solutions", href: "/services" },
     ],
+    key: "k-1",
   },
   {
     title: "Company",
@@ -18,6 +19,7 @@ const footerData = [
       { text: "For StartUps", href: "/startup" },
       { text: "Blog", href: "/" },
     ],
+    key: "k-2",
   },
   {
     title: "Support",
@@ -27,6 +29,7 @@ const footerData = [
       { text: "Help Center", href: "/support/help" },
       { text: "Customer Support", href: "/support" },
     ],
+    key: "k-3",
   },
   {
     title: "Legal",
@@ -35,6 +38,7 @@ const footerData = [
       { text: "Terms of Service", href: "/support/terms" },
       { text: "Cookie Policy", href: "/support/cookies" },
     ],
+    key: "k-4",
   },
 ];
 

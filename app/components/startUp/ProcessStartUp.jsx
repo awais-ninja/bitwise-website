@@ -33,7 +33,13 @@ const ProcessStartUp = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {stepsData.map((step) => (
-            <ProcessStep key={step.number} {...step} />
+            <ProcessStep
+              key={step.key}
+              number={step.number}
+              title={step.title}
+              description={step.description}
+              color={step.color}
+            />
           ))}
         </div>
       </div>

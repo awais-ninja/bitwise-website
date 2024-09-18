@@ -22,7 +22,7 @@ const Footer = () => {
 
           {footerData.map((section, index) => (
             <FooterSection
-              key={index}
+              key={section.key}
               title={section.title}
               links={section.links}
             />

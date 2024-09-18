@@ -12,7 +12,7 @@ const OurStory = () => (
       <div className="relative flex flex-col gap-12 md:gap-16">
         {aboutData.map((point, index) => (
           <div
-            key={index}
+            key={point.key}
             className={`relative flex flex-col md:flex-row items-center gap-6 md:gap-12 p-6 border border-gray-200 rounded-xl shadow-xl overflow-hidden transition-transform duration-500 transform hover:scale-105 hover:shadow-2xl ${
               index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
             }`}

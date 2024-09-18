@@ -20,7 +20,7 @@ const StandOut = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-3">
           {inovationData.map((service, index) => (
             <div
-              key={index}
+              key={service.key}
               className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center text-center transition-transform duration-300 hover:rotate-3 hover:scale-105 cursor-pointer"
             >
               <div className="mb-6">{service.icon}</div>

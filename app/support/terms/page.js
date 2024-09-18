@@ -1,5 +1,9 @@
 import Link from "@/app/primitives/Link";
 
+export const metadata = {
+  title: "Terms of Service",
+};
+
 const page = () => {
   return (
     <div>

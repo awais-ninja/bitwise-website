@@ -9,6 +9,7 @@ const HeroBG = () => {
       fill
       role="presentation"
       quality={80}
+      priority
       aria-hidden="true"
       style={{ objectFit: "cover", objectPosition: "center" }}
       className="absolute inset-0 opacity-20 select-none pointer-events-none"

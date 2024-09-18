@@ -9,6 +9,7 @@ const pricingData = [
       "1 Month of Support",
       "Standard Graphics",
     ],
+    key: "basic-plan",
   },
   {
     title: "Intermediate Plan",
@@ -21,6 +22,7 @@ const pricingData = [
       "Premium Graphics",
       "Basic Social Media Integration",
     ],
+    key: "intermediate-plan",
   },
   {
     title: "Professional Plan",
@@ -34,6 +36,7 @@ const pricingData = [
       "Advanced Social Media Integration",
       "Monthly Analytics Report",
     ],
+    key: "professional-plan",
   },
 ];
 

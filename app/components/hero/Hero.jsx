@@ -1,4 +1,3 @@
-import React from "react";
 import HeroBG from "./HeroBG";
 import ExampleComponent from "./Writing";
 import HeroForm from "./HeroForm";

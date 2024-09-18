@@ -42,7 +42,7 @@ const ContactUs = () => {
           <div className="flex flex-wrap -mx-5 gap-4">
             {faqData.map((item, index) => (
               <FAQItem
-                key={index}
+                key={item.key}
                 question={item.question}
                 answer={item.answer}
               />

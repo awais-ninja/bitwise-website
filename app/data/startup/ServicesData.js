@@ -8,12 +8,12 @@ import {
   FaCloud,
   FaUsers,
 } from "react-icons/fa";
-
 import { IoMegaphone } from "react-icons/io5";
 import { RiCustomerService2Fill } from "react-icons/ri";
 
 const ServicesData = [
   {
+    key: "key-1",
     icon: <FaCode size={60} />,
     title: "Custom Website Solutions",
     description:
@@ -22,6 +22,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-2",
     icon: <FaBriefcase size={60} />,
     title: "Startup Growth Consulting",
     description:
@@ -30,6 +31,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-3",
     icon: <FaBalanceScale size={60} />,
     title: "Legal & IP Protection",
     description:
@@ -38,6 +40,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-4",
     icon: <IoMegaphone size={60} />,
     title: "Branding & Market Visibility",
     description:
@@ -46,6 +49,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-5",
     icon: <FaEnvelope size={60} />,
     title: "Email Campaign Management",
     description:
@@ -54,6 +58,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-6",
     icon: <FaDesktop size={60} />,
     title: "Tech Support & Solutions",
     description:
@@ -62,6 +67,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-7",
     icon: <FaChartLine size={60} />,
     title: "SEO & Analytics Insights",
     description:
@@ -70,6 +76,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-8",
     icon: <FaCloud size={60} />,
     title: "Scalable Cloud Services",
     description:
@@ -78,6 +85,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-9",
     icon: <FaUsers size={60} />,
     title: "Enhanced Customer Support",
     description:
@@ -86,6 +94,7 @@ const ServicesData = [
     cta: "Read More ->",
   },
   {
+    key: "key-10",
     icon: <RiCustomerService2Fill size={60} />,
     title: "Social Media Strategy",
     description:

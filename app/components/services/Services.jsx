@@ -19,19 +19,18 @@ const ServicesShowcase = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {servicesData.map((service, index) => (
+        {servicesData.map((service) => (
           <Link
-            href={service.link}
-            key={index}
+            href={service.href}
+            key={service.title}
             className="relative bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105 cursor-pointer"
           >
-            <div className="relative w-full h-52">
+            <div className="relative w-full h-52 overflow-hidden">
               <Image
                 src={service.icon}
                 alt={service.title}
-                fill
-                style={{ objectFit: "cover" }}
-                role="img"
+                className="h-full w-full object-cover"
+                role="presentation"
                 aria-hidden="true"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black opacity-40"></div>

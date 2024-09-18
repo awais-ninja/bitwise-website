@@ -10,7 +10,7 @@ const PricingPlan = () => (
       <div className="flex flex-col md:flex-row gap-8 justify-center">
         {pricingData.map((plan, index) => (
           <div
-            key={index}
+            key={plan.key}
             className={`bg-white border border-gray-300 rounded-lg shadow-lg p-6 md:w-1/3 flex flex-col justify-between transition-transform duration-300 transform hover:scale-105 hover:rotate-3 hover:border-primary ${
               plan.title === "Intermediate Plan" ? "relative" : ""
             }`}
@@ -29,7 +29,7 @@ const PricingPlan = () => (
               </p>
               <ul className="list-disc list-inside mb-6">
                 {plan.features.map((feature, i) => (
-                  <li key={i}>{feature}</li>
+                  <li key={plan.key}>{feature}</li>
                 ))}
               </ul>
             </div>

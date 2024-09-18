@@ -22,17 +22,15 @@ const ServicesShowcase = () => {
         {servicesData.map((service, index) => (
           <Link
             href={service.link}
-            key={index}
+            key={service.key}
             className="bg-white rounded-lg shadow-md overflow-hidden relative group"
           >
             <div className="relative w-full h-52">
               <Image
                 src={service.icon}
                 alt={service.title}
-                layout="fill"
-                objectFit="cover"
                 quality={75}
-                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                className="object-cover h-auto w-full"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex items-end justify-center transition-opacity duration-300 opacity-0 group-hover:opacity-100">
                 <div className="text-white p-4 text-center">

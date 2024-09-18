@@ -1,4 +1,7 @@
 import Link from "next/link";
+export const metadata = {
+  title: "Privacy Policy",
+};
 
 const Page = () => {
   return (

@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
 import { Roboto } from "next/font/google";
@@ -10,7 +9,8 @@ import BackToTop from "./primitives/BacktoTop";
 import CookieConsentNotice from "./primitives/CookeisPopUp";
 import contactData from "./data/contact";
 import PopUp from "./components/PopUp";
-import CrispProvider from "./primitives/Crisp";
+import CrispProvider from "./providers/CrispProvider";
+import Providers from "./providers";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -55,18 +55,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <GoogleTagManager gtmId="G-VQ31N0WZS4" />
-      <CrispProvider siteId={process.env.CRISP_SITE_ID}>
-        <body className={roboto.className}>
+      <body className={roboto.className}>
+        <Providers crispSiteId={process.env.CRISP_SITE_ID}>
           <Navbar />
           {children}
           <BackToTop />
           <Footer />
-          <SpeedInsights />
-          <Analytics />
           <CookieConsentNotice />
           <PopUp />
-        </body>
-      </CrispProvider>
+        </Providers>
+      </body>
     </html>
   );
 }

@@ -8,12 +8,13 @@ const ServiceCard = ({ icon, title, description, cta, link }) => (
     <p className="text-md text-black text-center">{description}</p>
     <Link
       href={link}
-      className="inline-block py-1 px-6 text-black   font-semibold rounded-lg shadow-lg hover:bg-black hover:text-white transition-all duration-300 mt-4 mb-0 "
+      className="inline-block py-1 px-6 text-black font-semibold rounded-lg shadow-lg hover:bg-black hover:text-white transition-all duration-300 mt-4 mb-0"
     >
       {cta}
     </Link>
   </div>
 );
+
 const StartUpServices = () => {
   return (
     <section className="py-16">
@@ -25,8 +26,15 @@ const StartUpServices = () => {
           </span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {ServicesData.map((service, index) => (
-            <ServiceCard key={index} {...service} />
+          {ServicesData.map((service) => (
+            <ServiceCard
+              key={service.key} // Pass key directly
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              link={service.link}
+              cta={service.cta}
+            />
           ))}
         </div>
       </div>

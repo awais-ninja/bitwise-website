@@ -1,4 +1,7 @@
 import Link from "@/app/primitives/Link";
+export const metadata = {
+  title: "Help Center",
+};
 
 const Page = () => {
   return (

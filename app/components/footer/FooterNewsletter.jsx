@@ -70,7 +70,11 @@ const NewsletterForm = () => {
         Subscribe to our newsletter
       </h3>
       <form onSubmit={handleSubmit} className="flex flex-col w-full sm:w-96">
+        <label htmlFor="email" className="sr-only">
+          Email Address
+        </label>
         <input
+          id="email"
           type="email"
           name="email"
           value={data.email}

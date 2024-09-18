@@ -5,6 +5,10 @@ import StartUpSolutions from "../components/startUp/StartUpSolutions";
 
 import Link from "@/app/primitives/Link";
 
+export const metadata = {
+  title: "For Startups",
+};
+
 const StartUpKickstart = () => (
   <section className="py-12 px-4 text-center">
     <div className="max-w-screen-lg mx-auto">

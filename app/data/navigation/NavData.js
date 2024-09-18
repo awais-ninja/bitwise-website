@@ -1,9 +1,9 @@
 const navData = [
-  { id: 1, title: "Home", href: "/" },
-  { id: 2, title: "About", href: "/about" },
-  { id: 3, title: "Services", href: "/services" },
-  { id: 3, title: "For Startups", href: "/startup" },
-  { id: 4, title: "Blog", href: "/blog" },
-  { id: 5, title: "Contact", href: "/contact" },
+  { title: "Home", href: "/" },
+  { title: "About", href: "/about" },
+  { title: "Services", href: "/services" },
+  { title: "For Startups", href: "/startup" },
+  { title: "Blog", href: "/blog" },
+  { title: "Contact", href: "/contact" },
 ];
 export default navData;

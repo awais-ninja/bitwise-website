@@ -15,7 +15,9 @@ import {
 const MobileMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <>
@@ -37,9 +39,7 @@ const MobileMenu = () => {
           </div>
           <div className="flex flex-col flex-grow p-4 space-y-2">
             {navData.map((item) => (
-              <NavItem href={item.href} key={item.id} onClick={toggleMenu}>
-                {" "}
-                {/* Pass toggleMenu */}
+              <NavItem href={item.href} key={item.title} onClick={toggleMenu}>
                 {item.title}
               </NavItem>
             ))}

@@ -5,24 +5,28 @@ import { GiProgression } from "react-icons/gi";
 
 const whyUsData = [
   {
+    key: "key-1",
     icon: <FaStar className="text-primary text-5xl mb-4 " />,
     heading: "Unmatched Quality Assurance",
     description:
       "We guarantee exceptional quality in every project. Our meticulous quality assurance process ensures excellence and reliability in all our digital marketing and web solutions.",
   },
   {
+    key: "key-2",
     icon: <MdSupportAgent className="text-primary text-5xl mb-4 " />,
     heading: "Around-the-Clock Support",
     description:
       "Benefit from our 24/7 dedicated support. Our expert team is always available to address your inquiries and provide prompt assistance for all your marketing and IT needs.",
   },
   {
+    key: "key-3",
     icon: <FaRocket className="text-primary text-5xl mb-4 " />,
     heading: "Cutting-Edge Tech Solutions",
     description:
       "Leverage the latest technologies with our innovative tech solutions. We utilize advanced tools and strategies to enhance your digital presence and keep you ahead of the competition.",
   },
   {
+    key: "key-4",
     icon: <GiProgression className="text-primary text-5xl mb-4 " />,
     heading: "Proven Results and Growth",
     description:

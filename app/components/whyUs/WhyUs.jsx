@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {whyUsData.map((card, index) => (
             <div
-              key={index}
+              key={card.key}
               className="flex flex-col items-center bg-white p-4 shadow-md rounded-lg w-full h-auto text-center transition-transform duration-300 transform md:hover:scale-105 md:cursor-pointer overflow-auto"
             >
               {card.icon}

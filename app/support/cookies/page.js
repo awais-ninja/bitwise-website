@@ -1,4 +1,7 @@
 import Link from "@/app/primitives/Link";
+export const metadata = {
+  title: "Cookies",
+};
 
 const page = () => {
   return (

@@ -121,8 +121,13 @@ const HeroForm = () => {
         />
       </div>
       <div className="hidden">
-        <label>2 + 1 = ?</label>
-        <input value={data.honeypot} name="honeypot" onChange={onChange} />
+        <label htmlFor="honeypot">2 + 1 = ?</label>
+        <input
+          id="honeypot"
+          value={data.honeypot}
+          name="honeypot"
+          onChange={onChange}
+        />
       </div>
       <div className="mb-4">
         <h2 className="text-xl font-medium mb-2">Message</h2>
