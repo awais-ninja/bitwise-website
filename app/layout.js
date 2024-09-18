@@ -54,7 +54,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleTagManager gtmId="G-VQ31N0WZS4" />
       <body className={roboto.className}>
         <Providers crispSiteId={process.env.CRISP_SITE_ID}>
           <Navbar />
