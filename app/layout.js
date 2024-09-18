@@ -2,7 +2,6 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import { GoogleTagManager } from "@next/third-parties/google";
 import Navbar from "./components/navigation/NavBar";
 import Footer from "./components/footer/Footer";
 import BackToTop from "./primitives/BacktoTop";
