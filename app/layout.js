@@ -7,6 +7,9 @@ import CookieConsentNotice from "./primitives/CookeisPopUp";
 import contactData from "./data/contact";
 import PopUp from "./components/PopUp";
 import Providers from "./providers";
+import jsonData from "./data/jsonData";
+import JsonLd from "./primitives/JsonLd";
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -50,6 +53,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <JsonLd data={jsonData} />
       <body className={roboto.className}>
         <Providers
           crispSiteId={process.env.CRISP_SITE_ID}

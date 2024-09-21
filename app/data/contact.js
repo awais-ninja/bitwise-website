@@ -1,4 +1,4 @@
-import ogImage from "@/app/static/brand/wyze-tech-og.png";
+import ogImage from "@/app/static/brand/wyze-tech-og.webp";
 
 const contactData = {
   baseUrl: "https://wyze-tech.com",
