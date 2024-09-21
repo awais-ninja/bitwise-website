@@ -1,5 +1,3 @@
-import { Analytics } from "@vercel/analytics/react";
-
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navigation/NavBar";
@@ -8,7 +6,6 @@ import BackToTop from "./primitives/BacktoTop";
 import CookieConsentNotice from "./primitives/CookeisPopUp";
 import contactData from "./data/contact";
 import PopUp from "./components/PopUp";
-import CrispProvider from "./providers/CrispProvider";
 import Providers from "./providers";
 const roboto = Roboto({
   subsets: ["latin"],
@@ -54,7 +51,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Providers crispSiteId={process.env.CRISP_SITE_ID}>
+        <Providers
+          crispSiteId={process.env.CRISP_SITE_ID}
+          gId={process.env.GOOGLE_ID}
+        >
           <Navbar />
           {children}
           <BackToTop />

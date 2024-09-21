@@ -7,6 +7,7 @@ import {
   FaChartLine,
   FaCloud,
   FaUsers,
+  FaUserSecret,
 } from "react-icons/fa";
 import { IoMegaphone } from "react-icons/io5";
 import { RiCustomerService2Fill } from "react-icons/ri";
@@ -32,10 +33,10 @@ const ServicesData = [
   },
   {
     key: "key-3",
-    icon: <FaBalanceScale size={60} />,
-    title: "Legal & IP Protection",
+    icon: <FaUserSecret size={60} />,
+    title: "IT and Related Solutions",
     description:
-      "Safeguard your startup’s innovations and navigate legal hurdles with expert advice on intellectual property and compliance.",
+      "Empower your startup with robust IT solutions tailored to your unique needs. Our expert team provides comprehensive support to ensure your technology infrastructure is efficient, secure, and scalable.",
     link: "/startup/protection",
     cta: "Read More ->",
   },
