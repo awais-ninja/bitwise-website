@@ -4,7 +4,14 @@ export const metadata = {
 };
 
 const page = () => {
-  return <div>Blog Page</div>;
+  return (
+    <div>
+      {" "}
+      <div className="flex items-center justify-center min-h-screen bg-secondary">
+        <h1 className="text-4xl font-bold text-primary">Coming Soon</h1>
+      </div>
+    </div>
+  );
 };
 
 export default page;
